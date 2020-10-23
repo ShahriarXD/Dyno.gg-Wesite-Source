@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Dyno is a feature-rich and modular discord bot for your Discord server. With web configuration, moderation, anti-spam, auto roles, music, custom commands, and much more!">
+		<meta property="og:title" content="Dyno - Discord platform">
+<meta property="og:url" content="https://dyno.gg">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Dyno offers a powerful community bot and a place to advertise your server, easy and free.">
+<meta property="og:image" content="https://dyno.gg/images/v3/dyno-256.jpg?v=1.2.10">
+<meta property="og:image:alt" content="White diamond shaped Dyno logo with a light blue background">
+		<title>Dyno</title>
+		<link rel="shortcut icon" type="image/png" href="images/v3/favicon.png">
+		<link rel="stylesheet" href="pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/app.f8c43663e85291e69fe2d352d7b0b2ed.css">
+			<link rel="stylesheet" href="css/pages/commands.79eba49a8972de0f63fcac46a170cbae.css">
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MFGKT6L');</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Google Publisher Tags -->
+		<script async="async" src="www.googletagservices.com/tag/js/gpt.js"></script>
+		<script>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+		</script>
+		<script>
+			googletag.cmd.push(function() {
+				var mapping728x90ATF1 = googletag.sizeMapping().addSize([728, 0], [[728, 90], [970, 250], [970, 90], [728, 280]]).addSize([450, 0], [[728, 90], [320, 100], [320, 50]]).addSize([1, 0], [[320, 50], [320, 100]]).build();
+				var mapping300x250ATF1 = googletag.sizeMapping().addSize([320, 0], [[300, 250], [336, 280]]).addSize([1, 0], [[300, 250]]).build();
+				var gptAdSlots = [];
+				gptAdSlots[0] = googletag.defineSlot('/22280732/DynoGG_728x90_Other_ATF1', [[320, 50], [320, 100], [728, 90], [970, 90], [970, 250]], 'div-gpt-ad-1559171339966-0').defineSizeMapping(mapping728x90ATF1).addService(googletag.pubads());
+				gptAdSlots[1] = googletag.defineSlot('/22280732/DynoGG_300x250_Other_ATF1', [300, 250], 'div-gpt-ad-1559171433538-0').defineSizeMapping(mapping300x250ATF1).addService(googletag.pubads());
+				googletag.pubads().enableSingleRequest();
+				googletag.pubads().collapseEmptyDivs();
+				googletag.enableServices();
+			});
+		</script>
+		<!-- End Google Publisher Tags -->
+	</head>
+	<body>
+		
+		<nav id="navbar-mount"></nav>
+
+		<div class="page-wrapper">
+			<div class="page-commands">
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-2 commands-category-selector">
+				<div class="command-title-container has-text-centered">
+					<h1 class="is-size-3 has-text-weight-bold">Commands</h1>
+					<span class="has-text-grey">List of bot commands</span>
+				</div>
+				<aside class="menu">
+					<ul class="menu-list">
+						<li><a href="#/Roles" class="tab-control-legacy is-active">Roles</a></li>
+						<li><a href="#/Manager" class="tab-control-legacy">Manager</a></li>
+						<li><a href="#/Moderator" class="tab-control-legacy">Moderator</a></li>
+						<li><a href="#/Fun" class="tab-control-legacy">Fun</a></li>
+						<li><a href="#/Misc" class="tab-control-legacy">Misc</a></li>
+						<li><a href="#/Tags" class="tab-control-legacy">Tags</a></li>
+						<li><a href="#/Info" class="tab-control-legacy">Info</a></li>
+					</ul>
+				</aside>
+				<div class="ad-container">
+					<div id="div-gpt-ad-1559171433538-0">
+						<script>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559171433538-0'); });
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="column is-6 commands-table-container">
+				<div class="top-ad-container" style="display: flex; align-items: center; justify-content: center; height: 90px;">
+					<div id="div-gpt-ad-1559171339966-0">
+						<script>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1559171339966-0'); });
+						</script>
+					</div>
+				</div>
+				<script>(function () { if (typeof _bsa !== 'undefined' && _bsa) { _bsa.init('default', 'CKYD4KQU', 'placement:dynobotnet', { target: '.bsa-cpc', align: 'horizontal', disable_css: 'true' }); } })();</script>
+				<div id="Roles" class="container tab-content is-active">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">addrank</div>
+								<div class="column is-6">Add a new rank for members to join, works with existing or new roles.</div>
+								<div class="column is-4 has-text-grey">?addrank [name] (hex color) (hoist)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rank</div>
+								<div class="column is-6">Join/leave a rank</div>
+								<div class="column is-4 has-text-grey">?rank [rank name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ranks</div>
+								<div class="column is-6">Get a list of joinable ranks.</div>
+								<div class="column is-4 has-text-grey">?ranks</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">delrank</div>
+								<div class="column is-6">Delete an existing rank, does not delete the role.</div>
+								<div class="column is-4 has-text-grey">?delrank [rank name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">roles</div>
+								<div class="column is-6">Get a list of server roles.</div>
+								<div class="column is-4 has-text-grey">?roles (optional search)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">roleinfo</div>
+								<div class="column is-6">Get information about a role.</div>
+								<div class="column is-4 has-text-grey">?roleinfo</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Manager" class="container tab-content">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">addmod</div>
+								<div class="column is-6">Add a moderator role.</div>
+								<div class="column is-4 has-text-grey">?addmod [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">addrole</div>
+								<div class="column is-6">Add a new role, with optional color and hoist.</div>
+								<div class="column is-4 has-text-grey">?addrole [name] [hex color] [hoist]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">announce</div>
+								<div class="column is-6">Send an announcement using the bot.</div>
+								<div class="column is-4 has-text-grey">?announce [channel] [message]
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">announce everyone</div>
+								<div class="column is-6">Send an announcement with @everyone.</div>
+								<div class="column is-4 has-text-grey">?announce
+									everyone [channel] [message]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">announce here</div>
+								<div class="column is-6">Send an announcement with @here.</div>
+								<div class="column is-4 has-text-grey">?announce
+									here [channel] [message]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">announce role</div>
+								<div class="column is-6">Send an announcement with a role mention.</div>
+								<div class="column is-4 has-text-grey">?announce
+									role [role] [channel] [message]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ignorerole</div>
+								<div class="column is-6">Toggles command usage for a role. (Does not affect mods and managers)</div>
+								<div class="column is-4 has-text-grey">?ignorerole [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">delrole</div>
+								<div class="column is-6">Delete a role</div>
+								<div class="column is-4 has-text-grey">?delrole [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">delmod</div>
+								<div class="column is-6">Remove a moderator or mod role.</div>
+								<div class="column is-4 has-text-grey">?delmod [user or role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">modules</div>
+								<div class="column is-6">List available modules</div>
+								<div class="column is-4 has-text-grey">?modules</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ignorechannel</div>
+								<div class="column is-6">Toggles command usage for a channel. (Does not affect mods and managers)</div>
+								<div class="column is-4 has-text-grey">?ignorechannel [channel]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">prefix</div>
+								<div class="column is-6">Get or set the command prefix for this server.</div>
+								<div class="column is-4 has-text-grey">?prefix (prefix)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">mentionable</div>
+								<div class="column is-6">Toggle making a role mentionable on/off</div>
+								<div class="column is-4 has-text-grey">?mentionable [role name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rolecolor</div>
+								<div class="column is-6">Change the color of a role.</div>
+								<div class="column is-4 has-text-grey">?rolecolor [role] [hex color]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">setnick</div>
+								<div class="column is-6">Change the nickname of a user.</div>
+								<div class="column is-4 has-text-grey">?setnick [user] [new nickname]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">nick</div>
+								<div class="column is-6">Change the bot nickname.</div>
+								<div class="column is-4 has-text-grey">?nick [new nickname]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role</div>
+								<div class="column is-6">Add/remove a user to a role or roles.</div>
+								<div class="column is-4 has-text-grey">?role [user] [role name]
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role add</div>
+								<div class="column is-6">Add a user to a role or roles.</div>
+								<div class="column is-4 has-text-grey">?role
+									add [user] [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role remove</div>
+								<div class="column is-6">Remove a user from a role or roles.</div>
+								<div class="column is-4 has-text-grey">?role
+									remove [user] [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role toggle</div>
+								<div class="column is-6">Toggle a user from a role or roles.</div>
+								<div class="column is-4 has-text-grey">?role
+									toggle [user] [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role removeall</div>
+								<div class="column is-6">Remove all roles from a user</div>
+								<div class="column is-4 has-text-grey">?role
+									removall [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role all</div>
+								<div class="column is-6">Add/remove all users to or from a role. (Limit 1 role)</div>
+								<div class="column is-4 has-text-grey">?role
+									all [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role bots</div>
+								<div class="column is-6">Add/remove all bots to or from a role.</div>
+								<div class="column is-4 has-text-grey">?role
+									bots [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role humans</div>
+								<div class="column is-6">Add/remove all humans to or from a role.</div>
+								<div class="column is-4 has-text-grey">?role
+									humans [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role in</div>
+								<div class="column is-6">Add/remove users to or from a role that are in a role. (Limit 1 role)</div>
+								<div class="column is-4 has-text-grey">?role
+									in [in role], [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role status</div>
+								<div class="column is-6">Check current role assignment status</div>
+								<div class="column is-4 has-text-grey">?role
+									status</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">role cancel</div>
+								<div class="column is-6">Cancel current role assignment</div>
+								<div class="column is-4 has-text-grey">?role
+									cancel</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">module</div>
+								<div class="column is-6">Enable/disable a module.</div>
+								<div class="column is-4 has-text-grey">?module [module name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rolename</div>
+								<div class="column is-6">Change the name of a role.</div>
+								<div class="column is-4 has-text-grey">?rolename [role], [new name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">customs</div>
+								<div class="column is-6">List, enable, disable custom commands.</div>
+								<div class="column is-4 has-text-grey">?customs
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">customs list</div>
+								<div class="column is-6">List custom commands</div>
+								<div class="column is-4 has-text-grey">?customs
+									customs list</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">customs show</div>
+								<div class="column is-6">Show a custom command</div>
+								<div class="column is-4 has-text-grey">?customs
+									customs show [command]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">customs enable</div>
+								<div class="column is-6">Enable a custom command</div>
+								<div class="column is-4 has-text-grey">?customs
+									customs enable [command]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">customs disable</div>
+								<div class="column is-6">Disable a custom command</div>
+								<div class="column is-4 has-text-grey">?customs
+									customs disable [command]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">clearwarn</div>
+								<div class="column is-6">Clear warnings for a user.</div>
+								<div class="column is-4 has-text-grey">?clearwarn [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ignoreuser</div>
+								<div class="column is-6">Toggles command usage for a user.</div>
+								<div class="column is-4 has-text-grey">?ignoreuser [user] [reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">listmods</div>
+								<div class="column is-6">List moderators</div>
+								<div class="column is-4 has-text-grey">?listmods</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge</div>
+								<div class="column is-6">Delete a number of messages from a channel. (limit 1000)</div>
+								<div class="column is-4 has-text-grey">?purge
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge user</div>
+								<div class="column is-6">Delete messages for a user in the channel.</div>
+								<div class="column is-4 has-text-grey">?purge
+									[count] [user or id]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge match</div>
+								<div class="column is-6">Delete messages containing text. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									match [text] [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge not</div>
+								<div class="column is-6">Delete messages not containing text. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									not [text] [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge startswith</div>
+								<div class="column is-6">Delete messages that start with text. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									startswith [text] [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge endswith</div>
+								<div class="column is-6">Delete messages that ends with text. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									endswith [text] [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge links</div>
+								<div class="column is-6">Delete a number links posted in the channel. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									links [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge invites</div>
+								<div class="column is-6">Delete server invites posted in the channel. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									invites [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge images</div>
+								<div class="column is-6">Delete a number of images in the channel. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									images [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge mentions</div>
+								<div class="column is-6">Delete messages with mentions in the channel. (Limit 100)</div>
+								<div class="column is-4 has-text-grey">?purge
+									mentions [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge embeds</div>
+								<div class="column is-6">Delete messages containing rich embeds in the channel.</div>
+								<div class="column is-4 has-text-grey">?purge
+									embeds [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge humans</div>
+								<div class="column is-6">Delete messages sent by humans (ignores bots).</div>
+								<div class="column is-4 has-text-grey">?purge
+									humans [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge bots</div>
+								<div class="column is-6">Delete messages sent by bots.</div>
+								<div class="column is-4 has-text-grey">?purge
+									bots [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">purge text</div>
+								<div class="column is-6">Delete messages containing text, ignoring images/embeds.</div>
+								<div class="column is-4 has-text-grey">?purge
+									text [count]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">command</div>
+								<div class="column is-6">Enable/disable a command.</div>
+								<div class="column is-4 has-text-grey">?command [command name]</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Moderator" class="container tab-content">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">clean</div>
+								<div class="column is-6">Clean up Dyno&#x27;s responses.</div>
+								<div class="column is-4 has-text-grey">?clean (optional number)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">diagnose</div>
+								<div class="column is-6">Diagnose any command or module in the bot to determine if there are any problems.</div>
+								<div class="column is-4 has-text-grey">?diagnose [command or module]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">kick</div>
+								<div class="column is-6">Kick a member</div>
+								<div class="column is-4 has-text-grey">?kick [user] [reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ignored</div>
+								<div class="column is-6">List channels and users where commands are ignored.</div>
+								<div class="column is-4 has-text-grey">?ignored</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ban</div>
+								<div class="column is-6">Ban a member, optional time limit</div>
+								<div class="column is-4 has-text-grey">?ban [user] [limit] [reason]
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ban save</div>
+								<div class="column is-6">Ban a user and save their messages in chat.</div>
+								<div class="column is-4 has-text-grey">?ban
+									save [user] (limit) (reason)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">ban match</div>
+								<div class="column is-6">Ban members who sent messages matching the text, up to 100 messages. (Must be enabled in dashboard)</div>
+								<div class="column is-4 has-text-grey">?ban
+									match [match text]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">mute</div>
+								<div class="column is-6">Mute a member so they cannot type or speak, time limit in minutes.</div>
+								<div class="column is-4 has-text-grey">?mute [user] [limit] [reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">moderations</div>
+								<div class="column is-6">Get a list of active moderations (timed) and remaining time.</div>
+								<div class="column is-4 has-text-grey">?moderations</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">undeafen</div>
+								<div class="column is-6">Undeafen a member</div>
+								<div class="column is-4 has-text-grey">?undeafen [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">members</div>
+								<div class="column is-6">List members in a role(s) (max 90)</div>
+								<div class="column is-4 has-text-grey">?members [role]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rolepersist</div>
+								<div class="column is-6">Assign/unassign a role that persists if the user leaves and rejoins.</div>
+								<div class="column is-4 has-text-grey">?rolepersist [user] [role], [optional reason]
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rolepersist add</div>
+								<div class="column is-6">Adds a rolepersist to a user</div>
+								<div class="column is-4 has-text-grey">?rolepersist
+									[user] role, (reason)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rolepersist remove</div>
+								<div class="column is-6">Removes a rolepersist from a user</div>
+								<div class="column is-4 has-text-grey">?rolepersist
+									remove [user] role, (reason)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">unmute</div>
+								<div class="column is-6">Unmute a member</div>
+								<div class="column is-4 has-text-grey">?unmute [user] (optional reason)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">softban</div>
+								<div class="column is-6">Softban a member (ban and immediate unban to delete user messages)</div>
+								<div class="column is-4 has-text-grey">?softban [user] [reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">warn</div>
+								<div class="column is-6">Warn a member</div>
+								<div class="column is-4 has-text-grey">?warn [user] [reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">deafen</div>
+								<div class="column is-6">Deafen a member</div>
+								<div class="column is-4 has-text-grey">?deafen [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">lock</div>
+								<div class="column is-6">Lock a channel with optional timer and message.</div>
+								<div class="column is-4 has-text-grey">?lock [channel] (time) (message)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">reason</div>
+								<div class="column is-6">Supply a reason for a mod log case</div>
+								<div class="column is-4 has-text-grey">?reason [case num] [reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">modlogs</div>
+								<div class="column is-6">Get a list of mod logs for a user</div>
+								<div class="column is-4 has-text-grey">?modlogs [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">unlock</div>
+								<div class="column is-6">Unlock a previously locked channel.</div>
+								<div class="column is-4 has-text-grey">?unlock [channel] (message)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">unban</div>
+								<div class="column is-6">Unban a member</div>
+								<div class="column is-4 has-text-grey">?unban [user or id] [optional reason]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">warnings</div>
+								<div class="column is-6">Get warnings for a user</div>
+								<div class="column is-4 has-text-grey">?warnings [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">case</div>
+								<div class="column is-6">Show a single mod log case</div>
+								<div class="column is-4 has-text-grey">?case [Case ID]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">notes</div>
+								<div class="column is-6">Get notes for a user</div>
+								<div class="column is-4 has-text-grey">?notes [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">delnote</div>
+								<div class="column is-6">Delete a note about a member</div>
+								<div class="column is-4 has-text-grey">?delnote [user] [note ID]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">note</div>
+								<div class="column is-6">Add note(s) about a member</div>
+								<div class="column is-4 has-text-grey">?note [user] [text]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">temprole</div>
+								<div class="column is-6">Assign/unassign a role that persists for a limited time.</div>
+								<div class="column is-4 has-text-grey">?temprole [user] [time] [role], [optional reason]
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">temprole remove</div>
+								<div class="column is-6">Removes a temprole from a user</div>
+								<div class="column is-4 has-text-grey">?temprole
+									remove [user] role, (reason)</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">clearnotes</div>
+								<div class="column is-6">Delete all notes for a member</div>
+								<div class="column is-4 has-text-grey">?clearnotes [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">delwarn</div>
+								<div class="column is-6">Delete a single warning for a member</div>
+								<div class="column is-4 has-text-grey">?delwarn [warning ID]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">editnote</div>
+								<div class="column is-6">Edit a note about a member</div>
+								<div class="column is-4 has-text-grey">?editnote [user] [note ID] [note]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">modstats</div>
+								<div class="column is-6">Get moderation statistics for a mod/admin (may take up to 30 minutes to update)</div>
+								<div class="column is-4 has-text-grey">?modstats [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">duration</div>
+								<div class="column is-6">Change the duration of a mute/ban.</div>
+								<div class="column is-4 has-text-grey">?duration [modlog ID] [limit]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">lockdown</div>
+								<div class="column is-6">Lock channels defined in moderation settings.</div>
+								<div class="column is-4 has-text-grey">?lockdown
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">lockdown end</div>
+								<div class="column is-6">End lockdown of multiple channels</div>
+								<div class="column is-4 has-text-grey">?lockdown
+									end</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Fun" class="container tab-content">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">itunes</div>
+								<div class="column is-6">Get info on a song.</div>
+								<div class="column is-4 has-text-grey">?itunes [song name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">dog</div>
+								<div class="column is-6">Find some cute dog pictures.</div>
+								<div class="column is-4 has-text-grey">?dog</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">roll</div>
+								<div class="column is-6">Roll the dice (support optional size: d4, d8, d10, d12, d20, d00)</div>
+								
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">pokemon</div>
+								<div class="column is-6">Get info on pokemon.</div>
+								<div class="column is-4 has-text-grey">?pokemon [name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">rps</div>
+								<div class="column is-6">Rock Paper Scissors with the bot.</div>
+								<div class="column is-4 has-text-grey">?rps [choice]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">cat</div>
+								<div class="column is-6">Find some cute cat pictures.</div>
+								<div class="column is-4 has-text-grey">?cat</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">country</div>
+								<div class="column is-6">Check the stats of a country.</div>
+								<div class="column is-4 has-text-grey">?country [country code]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">pug</div>
+								<div class="column is-6">Find some cute pug pictures.</div>
+								<div class="column is-4 has-text-grey">?pug</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">flip</div>
+								<div class="column is-6">Flip a coin.</div>
+								<div class="column is-4 has-text-grey">?flip</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">space</div>
+								<div class="column is-6">Get info about the space station.</div>
+								<div class="column is-4 has-text-grey">?space</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">dadjoke</div>
+								<div class="column is-6">Get a random Dad joke.</div>
+								<div class="column is-4 has-text-grey">?dadjoke</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">github</div>
+								<div class="column is-6">Get info on a Github repository.</div>
+								
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">norris</div>
+								<div class="column is-6">Get a random Chuck Norris fact.</div>
+								<div class="column is-4 has-text-grey">?norris</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">poll</div>
+								<div class="column is-6">Start a poll (max 5 choices)</div>
+								<div class="column is-4 has-text-grey">?poll [message] &quot;[choice1]&quot; &quot;[choice2]&quot;
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">poll show</div>
+								<div class="column is-6">Show the results of a poll</div>
+								<div class="column is-4 has-text-grey">?poll
+									poll show [message ID/link]</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Misc" class="container tab-content">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">afk</div>
+								<div class="column is-6">Set an AFK status to display when you are mentioned</div>
+								<div class="column is-4 has-text-grey">?afk
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">afk set</div>
+								<div class="column is-6">Set an AFK status shown when you&#x27;re mentioned, and display in nickname.</div>
+								<div class="column is-4 has-text-grey">?afk
+									set [status]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">afk ignore</div>
+								<div class="column is-6">Use in a channel to not return from AFK when talking in that channel.</div>
+								<div class="column is-4 has-text-grey">?afk
+									ignore [channel]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">remindme</div>
+								<div class="column is-6">Set a reminder</div>
+								<div class="column is-4 has-text-grey">?remindme [time] [reminder]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">color</div>
+								<div class="column is-6">Show a color using hex.</div>
+								
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">avatar</div>
+								<div class="column is-6">Get a users&#x27; avatar.</div>
+								<div class="column is-4 has-text-grey">?avatar [user]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">dynoavatar</div>
+								<div class="column is-6">Generates a Dyno-like avatar.</div>
+								<div class="column is-4 has-text-grey">?dynoav</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">randomcolor</div>
+								<div class="column is-6">Generates a random hex color with preview.</div>
+								<div class="column is-4 has-text-grey">?randomcolor</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">whois</div>
+								<div class="column is-6">Get user information.</div>
+								<div class="column is-4 has-text-grey">?whois [user mention]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">distance</div>
+								<div class="column is-6">Get the distance between two sets of coordinates</div>
+								<div class="column is-4 has-text-grey">?distance [coords] [coords]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">membercount</div>
+								<div class="column is-6">Get the server member count.</div>
+								<div class="column is-4 has-text-grey">?membercount</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">discrim</div>
+								<div class="column is-6">Gets a list of users with a discriminator</div>
+								<div class="column is-4 has-text-grey">?discrim 1234</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">emotes</div>
+								<div class="column is-6">Gets a list of server emojis.</div>
+								<div class="column is-4 has-text-grey">?emotes</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">serverinfo</div>
+								<div class="column is-6">Get server info/stats.</div>
+								<div class="column is-4 has-text-grey">?serverinfo</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">covid</div>
+								<div class="column is-6">Get COVID-19 stats.</div>
+								<div class="column is-4 has-text-grey">?covid
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">covid country</div>
+								<div class="column is-6">Get stats for a country.</div>
+								<div class="column is-4 has-text-grey">?covid
+									country [country]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">covid state</div>
+								<div class="column is-6">Get stats for a US state.</div>
+								<div class="column is-4 has-text-grey">?covid
+									state [state]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">covid top</div>
+								<div class="column is-6">List top countries by cases.</div>
+								<div class="column is-4 has-text-grey">?covid
+									top</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Tags" class="container tab-content">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag</div>
+								<div class="column is-6">Get or create a tag</div>
+								<div class="column is-4 has-text-grey">?tag [tag name]
+								</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag raw</div>
+								<div class="column is-6">Get the raw tag for use copying/editing.</div>
+								<div class="column is-4 has-text-grey">?tag
+									raw (optional category) [tag name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag category</div>
+								<div class="column is-6">Create a tag category.</div>
+								<div class="column is-4 has-text-grey">?tag
+									category [cat name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag categories</div>
+								<div class="column is-6">List tag categories.</div>
+								<div class="column is-4 has-text-grey">?tag
+									categories</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag create</div>
+								<div class="column is-6">Create a new tag.</div>
+								<div class="column is-4 has-text-grey">?tag
+									create (optional category) [tag name] [content]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag edit</div>
+								<div class="column is-6">Edit an existing tag.</div>
+								<div class="column is-4 has-text-grey">?tag
+									edit (optional category) [tag name] [content]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag delete</div>
+								<div class="column is-6">Delete an existing tag.</div>
+								<div class="column is-4 has-text-grey">?tag
+									delete (optional category) [tag name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tag delcat</div>
+								<div class="column is-6">Delete a category.</div>
+								<div class="column is-4 has-text-grey">?tag
+									delcat [category name]</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">tags</div>
+								<div class="column is-6">Get a list of tags, use the tag command to fetch a tag.</div>
+								<div class="column is-4 has-text-grey">?tags (optional category) (optional search)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Info" class="container tab-content">
+					<div class="columns commands-header-container">
+						<div class="column is-2 commands-header">Command</div>
+						<div class="column is-6 commands-header is-hidden-touch">Description</div>
+						<div class="column is-4 commands-header is-hidden-touch">Usage</div>
+					</div>
+					<div class="commands-container columns is-multiline">
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">premium</div>
+								<div class="column is-6">Dyno premium information. (Responds in DM)</div>
+								<div class="column is-4 has-text-grey">?premium</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">info</div>
+								<div class="column is-6">Get bot info.</div>
+								<div class="column is-4 has-text-grey">?info</div>
+							</div>
+						</div>
+						<div class="commands-line column is-12">
+							<div class="columns">
+								<div class="column is-2 has-text-primary">uptime</div>
+								<div class="column is-6">Get bot uptime</div>
+								<div class="column is-4 has-text-grey">?uptime</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+
+		
+
+
+
+<footer class="footer">
+    <div class="content is-hidden-mobile">
+      <div class="columns is-centered">
+            <div class="column is-6-mobile is-3-desktop" style="display: block; text-align: left;">
+      <img class="footer-logo" src="s.dyno.gg/web-assets/footer/logo%402x.png">
+      <div class="social-text">
+        <h3>Get in Touch</h3>
+      </div>
+      <div class="social-icons">
+        <a class="social-link" href="https://discord.gg/8PW8rST">
+          <img class="social-icon discord-icon" src="s.dyno.gg/web-assets/footer/discord.png">
+        </a>
+        <a class="social-link" href="https://twitter.com/DynoDiscord">
+          <img class="social-icon discord-icon" src="s.dyno.gg/web-assets/footer/twitter.png">
+        </a>
+        <a class="social-link" href="cdn-cgi/l/email-protection.html#304455515d7054495e5f1e5757">
+          <img class="social-icon discord-icon" src="s.dyno.gg/web-assets/footer/mail.png">
+        </a>
+      </div>
+      <span class="copyright-notice">
+        © 2019 Solomid Corporation. All rights reserved.
+      </span>
+    </div>
+            <div class="column is-12-mobile is-3-desktop" style="display: block; text-align: left;">
+      <div class="columns is-mobile">
+        <div class="column is-6">
+          <span class="footer-link-title">Dyno</span>
+          <a href="bot.html" title="Dyno Bot" class="footer-link">Dyno Bot</a>
+          <a href="servers.html" title="Public Servers" class="footer-link">Public Servers</a>
+          <a href="commands.html" title="Bot Commands" class="footer-link">Bot Commands</a>
+          <a href="https://wiki.dyno.gg" title="Wiki" class="footer-link">Help</a>
+          <a href="premium.html" title="Get Premium" class="footer-link">Get Premium</a>
+          <a href="terms.html" title="Terms of Service" class="footer-link">Terms of Service</a>
+          <a href="privacy.html" title="Privacy Policy" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="column is-6">
+          <span class="footer-link-title">Blitz Network</span>
+          <a href="index.html" class="footer-link">Dyno by Blitz</a>
+          <a href="http://blitz.gg/" class="footer-link">Blitz for League</a>
+          <a href="http://blitz.gg/fortnite" class="footer-link">Blitz for Fortnite</a>
+        </div>
+      </div>
+    </div>
+            <div class="column is-6-mobile is-3-desktop" style="display: block; text-align: right;">
+        <div class="buttons">
+          <a class="button is-info is-outlined" href="premium.html" title="Get Premium">
+            Get Premium
+          </a>
+        </div>
+    </div>
+      </div>
+    </div>
+    <div class="content is-hidden-tablet">
+      <div class="columns is-mobile is-multiline">
+            <div class="column is-12-mobile is-3-desktop" style="display: block; text-align: left;">
+      <div class="columns is-mobile">
+        <div class="column is-6">
+          <span class="footer-link-title">Dyno</span>
+          <a href="bot.html" title="Dyno Bot" class="footer-link">Dyno Bot</a>
+          <a href="servers.html" title="Public Servers" class="footer-link">Public Servers</a>
+          <a href="commands.html" title="Bot Commands" class="footer-link">Bot Commands</a>
+          <a href="https://wiki.dyno.gg" title="Wiki" class="footer-link">Help</a>
+          <a href="premium.html" title="Get Premium" class="footer-link">Get Premium</a>
+          <a href="terms.html" title="Terms of Service" class="footer-link">Terms of Service</a>
+          <a href="privacy.html" title="Privacy Policy" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="column is-6">
+          <span class="footer-link-title">Blitz Network</span>
+          <a href="index.html" class="footer-link">Dyno by Blitz</a>
+          <a href="http://blitz.gg/" class="footer-link">Blitz for League</a>
+          <a href="http://blitz.gg/fortnite" class="footer-link">Blitz for Fortnite</a>
+        </div>
+      </div>
+    </div>
+            <div class="column is-6-mobile is-3-desktop" style="display: block; text-align: left;">
+      <img class="footer-logo" src="s.dyno.gg/web-assets/footer/logo%402x.png">
+      <div class="social-text">
+        <h3>Get in Touch</h3>
+      </div>
+      <div class="social-icons">
+        <a class="social-link" href="https://discord.gg/8PW8rST">
+          <img class="social-icon discord-icon" src="s.dyno.gg/web-assets/footer/discord.png">
+        </a>
+        <a class="social-link" href="https://twitter.com/DynoDiscord">
+          <img class="social-icon discord-icon" src="s.dyno.gg/web-assets/footer/twitter.png">
+        </a>
+        <a class="social-link" href="cdn-cgi/l/email-protection.html#add9c8ccc0edc9d4c3c283caca">
+          <img class="social-icon discord-icon" src="s.dyno.gg/web-assets/footer/mail.png">
+        </a>
+      </div>
+      <span class="copyright-notice">
+        © 2019 Solomid Corporation. All rights reserved.
+      </span>
+    </div>
+            <div class="column is-6-mobile is-3-desktop" style="display: block; text-align: right;">
+        <div class="buttons">
+          <a class="button is-info is-outlined" href="premium.html" title="Get Premium">
+            Get Premium
+          </a>
+        </div>
+    </div>
+      </div>
+    </div>
+</footer>
+		<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/jquery.js"></script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-W6NZSRQ');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFGKT6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<script src="js/vendor/base64.min.js"></script>
+		<script type="text/javascript">
+			var host = 'https://dyno.gg';
+		</script>
+			<script type="text/javascript" src="js/react/navbar.5cce603553dc23299308725518d2e487.js"></script>
+			<script type="text/javascript" src="js/react/navbar.5cce603553dc23299308725518d2e487.js"></script>
+		<script src="js/app.58108ac8c2e3568d8bc05bd0cb572cc1.js"></script>
+	</body>
+</html>
